@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Knowledge Base - Self-service IT support documentation and guides">
+    <meta name="keywords" content="knowledge base, IT documentation, self-service, tech guides, GSC">
+    <title>Knowledge Base - GSC Tech Support</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="animated-bg"></canvas>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="gsc-logo.png" alt="GSC Tech Support Logo" class="logo">
+                    <div class="logo-text">
+                        <h1 class="logo-title">GSC Tech Support</h1>
+                        <p class="logo-subtitle">Global Sales Consultancy</p>
+                    </div>
+                </div>
+                <nav class="header-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="tickets.html" class="nav-link">Tickets</a>
+                    <a href="live-chat.html" class="nav-link">Live Chat</a>
+                    <a href="knowledge-base.html" class="nav-link active">Knowledge Base</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <a href="mailto:ithelp@techsupport.com" class="email-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    ithelp@techsupport.com
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Knowledge Base</h1>
+                <p class="page-description">Self-service guides and documentation for common IT issues</p>
+            </div>
+
+            <div class="kb-search">
+                <div class="search-box">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" placeholder="Search knowledge base..." class="search-input">
+                </div>
+            </div>
+
+            <div class="kb-categories">
+                <h2 class="section-title">Browse by Category</h2>
+                
+                <div class="kb-category">
+                    <div class="kb-category-header">
+                        <div class="kb-category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="kb-category-title">Hardware & Devices</h3>
+                            <p class="kb-category-desc">Computer, monitor, and peripheral troubleshooting</p>
+                        </div>
+                    </div>
+                    <div class="kb-articles">
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">How to restart your computer properly</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Troubleshooting monitor display issues</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Connecting external devices (mouse, keyboard, USB)</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Computer running slow - Performance optimization</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Printer setup and troubleshooting</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="kb-category">
+                    <div class="kb-category-header">
+                        <div class="kb-category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="kb-category-title">Software & Applications</h3>
+                            <p class="kb-category-desc">Application installation, updates, and troubleshooting</p>
+                        </div>
+                    </div>
+                    <div class="kb-articles">
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Installing approved software applications</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Microsoft Office troubleshooting guide</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Fixing application crashes and freezes</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Software update procedures</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Uninstalling programs safely</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="kb-category">
+                    <div class="kb-category-header">
+                        <div class="kb-category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="kb-category-title">Network & Connectivity</h3>
+                            <p class="kb-category-desc">Internet, WiFi, and network access issues</p>
+                        </div>
+                    </div>
+                    <div class="kb-articles">
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Connecting to company WiFi network</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Troubleshooting "No Internet" connection</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">VPN setup for remote access</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Slow internet connection fixes</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Accessing shared network drives</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="kb-category">
+                    <div class="kb-category-header">
+                        <div class="kb-category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="kb-category-title">Security & Passwords</h3>
+                            <p class="kb-category-desc">Account security, passwords, and data protection</p>
+                        </div>
+                    </div>
+                    <div class="kb-articles">
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">How to reset your password</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Creating strong, secure passwords</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Identifying phishing emails and scams</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Two-factor authentication setup</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Data backup best practices</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="kb-category">
+                    <div class="kb-category-header">
+                        <div class="kb-category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="kb-category-title">Email & Communication</h3>
+                            <p class="kb-category-desc">Email setup, troubleshooting, and best practices</p>
+                        </div>
+                    </div>
+                    <div class="kb-articles">
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Setting up email on new devices</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Email not sending or receiving</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Managing email storage and quotas</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Creating email signatures</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Organizing emails with folders and rules</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="kb-category">
+                    <div class="kb-category-header">
+                        <div class="kb-category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"></path>
+                                <rect x="9" y="3" width="6" height="4" rx="1"></rect>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="kb-category-title">Policies & Procedures</h3>
+                            <p class="kb-category-desc">IT policies, guidelines, and company procedures</p>
+                        </div>
+                    </div>
+                    <div class="kb-articles">
+                        <a href="logging.html" class="kb-article">
+                            <span class="kb-article-title">How to submit a support request</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="escalation.html" class="kb-article">
+                            <span class="kb-article-title">Understanding escalation procedures</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="sla.html" class="kb-article">
+                            <span class="kb-article-title">Service Level Agreement (SLA)</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="asset-register.html" class="kb-article">
+                            <span class="kb-article-title">Computer replacement policy</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#" class="kb-article">
+                            <span class="kb-article-title">Acceptable use policy</span>
+                            <svg class="kb-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kb-popular">
+                <h2 class="section-title">Most Popular Articles</h2>
+                <div class="popular-grid">
+                    <a href="#" class="popular-article">
+                        <div class="popular-number">1</div>
+                        <div class="popular-content">
+                            <h3>How to restart your computer properly</h3>
+                            <p>Step-by-step guide to safely restart your system</p>
+                        </div>
+                    </a>
+                    <a href="#" class="popular-article">
+                        <div class="popular-number">2</div>
+                        <div class="popular-content">
+                            <h3>Troubleshooting "No Internet" connection</h3>
+                            <p>Quick fixes for common network connectivity issues</p>
+                        </div>
+                    </a>
+                    <a href="#" class="popular-article">
+                        <div class="popular-number">3</div>
+                        <div class="popular-content">
+                            <h3>How to reset your password</h3>
+                            <p>Password reset procedures and security guidelines</p>
+                        </div>
+                    </a>
+                    <a href="#" class="popular-article">
+                        <div class="popular-number">4</div>
+                        <div class="popular-content">
+                            <h3>Computer running slow - Performance optimization</h3>
+                            <p>Tips to improve system performance and speed</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2>Can't find what you're looking for?</h2>
+                <p>Our support team is ready to help with any questions or issues.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary">Contact Support</a>
+                    <a href="faq.html" class="btn-secondary">View FAQ</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="gsc-logo.png" alt="GSC Logo" class="footer-logo">
+                    <p class="footer-text">Global Sales Consultancy Tech Support</p>
+                    <p class="footer-text-small">Directed by Celokuhle Shabangu</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Documentation</h4>
+                    <nav class="footer-nav">
+                        <a href="logging.html" class="footer-link">Support Logging</a>
+                        <a href="troubleshooting.html" class="footer-link">Troubleshooting</a>
+                        <a href="escalation.html" class="footer-link">Escalation Policy</a>
+                        <a href="asset-register.html" class="footer-link">Asset Register</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <nav class="footer-nav">
+                        <a href="tickets.html" class="footer-link">Tickets</a>
+                        <a href="live-chat.html" class="footer-link">Live Chat</a>
+                        <a href="knowledge-base.html" class="footer-link">Knowledge Base</a>
+                        <a href="faq.html" class="footer-link">FAQ</a>
+                        <a href="sla.html" class="footer-link">SLA</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <a href="mailto:ithelp@techsupport.com" class="footer-email">
+                        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        ithelp@techsupport.com
+                    </a>
+                    <a href="contact.html" class="footer-link">Contact Page</a>
+                    <a href="about.html" class="footer-link">About Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Global Sales Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/animation.js"></script>
+</body>
+</html>

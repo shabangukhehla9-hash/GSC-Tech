@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Management - GSC Tech Support</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="gsc-logo.png" alt="GSC Tech Support Logo" class="logo">
+                    <div class="logo-text">
+                        <h1 class="logo-title">GSC Tech Support</h1>
+                        <p class="logo-subtitle">Global Sales Consultancy</p>
+                    </div>
+                </div>
+                <nav class="header-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="logging.html" class="nav-link">Logging</a>
+                    <a href="troubleshooting.html" class="nav-link">Troubleshooting</a>
+                    <a href="escalation.html" class="nav-link">Escalation</a>
+                    <a href="asset-register.html" class="nav-link">Assets</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="live-chat.html" class="nav-link">Live Chat</a>
+                    <a href="tickets.html" class="nav-link active">Tickets</a>
+                </nav>
+                <a href="mailto:ithelp@techsupport.com" class="email-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    ithelp@techsupport.com
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container-wide">
+            <a href="index.html" class="back-link">
+                <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Documentation
+            </a>
+
+            <div class="page-header">
+                <h1 class="page-title">Ticket Management Dashboard</h1>
+                <p class="page-description">View and manage pending support tickets. Follow the service workflow to efficiently resolve customer issues.</p>
+            </div>
+
+            <!-- Ticket Statistics -->
+            <div class="ticket-stats-grid">
+                <div class="ticket-stat-card">
+                    <div class="ticket-stat-icon new">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                    </div>
+                    <div class="ticket-stat-number">8</div>
+                    <div class="ticket-stat-label">New Tickets</div>
+                </div>
+                <div class="ticket-stat-card">
+                    <div class="ticket-stat-icon in-progress">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <div class="ticket-stat-number">5</div>
+                    <div class="ticket-stat-label">In Progress</div>
+                </div>
+                <div class="ticket-stat-card">
+                    <div class="ticket-stat-icon escalated">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="ticket-stat-number">2</div>
+                    <div class="ticket-stat-label">Escalated</div>
+                </div>
+                <div class="ticket-stat-card">
+                    <div class="ticket-stat-icon resolved">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <div class="ticket-stat-number">127</div>
+                    <div class="ticket-stat-label">Resolved Today</div>
+                </div>
+            </div>
+
+            <!-- Service Workflow Guide -->
+            <div class="info-card accent-border">
+                <h2 class="info-card-title">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 16v-4"></path>
+                        <path d="M12 8h.01"></path>
+                    </svg>
+                    How to Service Ticket Requests
+                </h2>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <div class="workflow-step-number">1</div>
+                        <div class="workflow-step-content">
+                            <h3 class="workflow-step-title">Review Ticket Details</h3>
+                            <p class="workflow-step-text">Read the incident description, check priority level, and review any previous notes or history.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="workflow-step-number">2</div>
+                        <div class="workflow-step-content">
+                            <h3 class="workflow-step-title">Contact the User</h3>
+                            <p class="workflow-step-text">Reach out via phone or email to gather additional information and confirm the issue details.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="workflow-step-number">3</div>
+                        <div class="workflow-step-content">
+                            <h3 class="workflow-step-title">Follow Troubleshooting Guide</h3>
+                            <p class="workflow-step-text">Use the <a href="troubleshooting.html" class="link">systematic troubleshooting questions</a> to identify the root cause.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="workflow-step-number">4</div>
+                        <div class="workflow-step-content">
+                            <h3 class="workflow-step-title">Apply Solution</h3>
+                            <p class="workflow-step-text">Implement the fix, test thoroughly, and confirm with the user that the issue is resolved.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="workflow-step-number">5</div>
+                        <div class="workflow-step-content">
+                            <h3 class="workflow-step-title">Document & Close</h3>
+                            <p class="workflow-step-text">Record the solution, update ticket status, and log resolution time for future reference.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step escalate">
+                        <div class="workflow-step-number">!</div>
+                        <div class="workflow-step-content">
+                            <h3 class="workflow-step-title">Escalate if Needed</h3>
+                            <p class="workflow-step-text">If unable to resolve, follow the <a href="escalation.html" class="link">escalation policy</a> and transfer to appropriate level.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pending Tickets Table -->
+            <div class="table-card primary-border">
+                <h2 class="table-card-title">Pending Support Tickets</h2>
+                <p class="table-card-description">Active tickets requiring attention. Click on any ticket to view details and take action.</p>
+                
+                <!-- Filter Controls -->
+                <div class="ticket-filters">
+                    <div class="filter-group">
+                        <label class="filter-label">Status:</label>
+                        <select class="filter-select">
+                            <option value="all">All Tickets</option>
+                            <option value="new" selected>New</option>
+                            <option value="in-progress">In Progress</option>
+                            <option value="escalated">Escalated</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label">Priority:</label>
+                        <select class="filter-select">
+                            <option value="all">All Priorities</option>
+                            <option value="high">High</option>
+                            <option value="average">Average</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label">Department:</label>
+                        <select class="filter-select">
+                            <option value="all">All Departments</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="sales">Sales</option>
+                            <option value="hr">HR</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="tickets-table">
+                        <thead>
+                            <tr>
+                                <th>Ticket ID</th>
+                                <th>Date/Time</th>
+                                <th>User</th>
+                                <th>Department</th>
+                                <th>Category</th>
+                                <th>Description</th>
+                                <th>Priority</th>
+                                <th>Status</th>
+                                <th>Assigned To</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="ticket-row">
+                                <td class="ticket-id">20250131-001</td>
+                                <td>2025-01-31 09:15</td>
+                                <td>Sarah Johnson</td>
+                                <td>Marketing</td>
+                                <td><span class="category-badge hardware">Hardware</span></td>
+                                <td class="ticket-desc">Computer won't turn on, no power lights</td>
+                                <td><span class="priority-badge high">High</span></td>
+                                <td><span class="status-badge new">New</span></td>
+                                <td>Unassigned</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view">View</button>
+                                        <button class="action-btn assign">Assign</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="ticket-row">
+                                <td class="ticket-id">20250131-002</td>
+                                <td>2025-01-31 09:42</td>
+                                <td>Michael Chen</td>
+                                <td>Sales</td>
+                                <td><span class="category-badge software">Software</span></td>
+                                <td class="ticket-desc">Excel crashes when opening large files</td>
+                                <td><span class="priority-badge average">Average</span></td>
+                                <td><span class="status-badge in-progress">In Progress</span></td>
+                                <td>Tech-01</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view">View</button>
+                                        <button class="action-btn update">Update</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="ticket-row">
+                                <td class="ticket-id">20250131-003</td>
+                                <td>2025-01-31 10:05</td>
+                                <td>Emily Rodriguez</td>
+                                <td>HR</td>
+                                <td><span class="category-badge network">Network</span></td>
+                                <td class="ticket-desc">Cannot access shared drive, network error</td>
+                                <td><span class="priority-badge high">High</span></td>
+                                <td><span class="status-badge new">New</span></td>
+                                <td>Unassigned</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view">View</button>
+                                        <button class="action-btn assign">Assign</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="ticket-row">
+                                <td class="ticket-id">20250131-004</td>
+                                <td>2025-01-31 10:28</td>
+                                <td>David Thompson</td>
+                                <td>Marketing</td>
+                                <td><span class="category-badge printer">Printer</span></td>
+                                <td class="ticket-desc">Printer showing paper jam but no paper stuck</td>
+                                <td><span class="priority-badge average">Average</span></td>
+                                <td><span class="status-badge new">New</span></td>
+                                <td>Unassigned</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view">View</button>
+                                        <button class="action-btn assign">Assign</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="ticket-row">
+                                <td class="ticket-id">20250131-005</td>
+                                <td>2025-01-31 11:10</td>
+                                <td>Lisa Anderson</td>
+                                <td>Sales</td>
+                                <td><span class="category-badge email">Email</span></td>
+                                <td class="ticket-desc">Emails not sending, stuck in outbox</td>
+                                <td><span class="priority-badge high">High</span></td>
+                                <td><span class="status-badge in-progress">In Progress</span></td>
+                                <td>Tech-02</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view">View</button>
+                                        <button class="action-btn update">Update</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="ticket-row">
+                                <td class="ticket-id">20250130-089</td>
+                                <td>2025-01-30 16:45</td>
+                                <td>Robert Martinez</td>
+                                <td>HR</td>
+                                <td><span class="category-badge password">Password</span></td>
+                                <td class="ticket-desc">Account locked after multiple failed login attempts</td>
+                                <td><span class="priority-badge low">Low</span></td>
+                                <td><span class="status-badge escalated">Escalated</span></td>
+                                <td>Level 2</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view">View</button>
+                                        <button class="action-btn escalate">Escalate</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="ticket-row">
+                                <td class="ticket-id">20250131-006</td>
+                                <td>2025-01-31 11:55</td>
+                                <td>Jennifer Lee</td>
+                                <td>Marketing</td>
+                                <td><span class="category-badge software">Software</span></td>
+                                <td class="ticket-desc">Photoshop license expired, need reactivation</td>
+                                <td><span class="priority-badge average">Average</span></td>
+                                <td><span class="status-badge new">New</span></td>
+                                <td>Unassigned</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view">View</button>
+                                        <button class="action-btn assign">Assign</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="ticket-row">
+                                <td class="ticket-id">20250131-007</td>
+                                <td>2025-01-31 12:20</td>
+                                <td>James Wilson</td>
+                                <td>Sales</td>
+                                <td><span class="category-badge hardware">Hardware</span></td>
+                                <td class="ticket-desc">Monitor flickering intermittently</td>
+                                <td><span class="priority-badge low">Low</span></td>
+                                <td><span class="status-badge new">New</span></td>
+                                <td>Unassigned</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view">View</button>
+                                        <button class="action-btn assign">Assign</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="table-note">
+                    <strong>Note:</strong> Tickets are automatically prioritized based on urgency and business impact. 
+                    High priority tickets should be addressed within 2 hours. Average priority within 4 hours. 
+                    Low priority within 8 hours. Refer to the <a href="escalation.html" class="link">escalation policy</a> for SLA details.
+                </p>
+            </div>
+
+            <!-- Quick Reference Guide -->
+            <div class="info-card">
+                <h2 class="info-card-title">Ticket Service Best Practices</h2>
+                <div class="best-practices-grid">
+                    <div class="practice-item">
+                        <div class="practice-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="practice-title">Respond Quickly</h3>
+                        <p class="practice-text">Acknowledge new tickets within 15 minutes to set expectations</p>
+                    </div>
+                    <div class="practice-item">
+                        <div class="practice-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="practice-title">Clear Communication</h3>
+                        <p class="practice-text">Keep users informed of progress and estimated resolution times</p>
+                    </div>
+                    <div class="practice-item">
+                        <div class="practice-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="12" y1="18" x2="12" y2="12"></line>
+                                <line x1="9" y1="15" x2="15" y2="15"></line>
+                            </svg>
+                        </div>
+                        <h3 class="practice-title">Document Everything</h3>
+                        <p class="practice-text">Record all troubleshooting steps and solutions for knowledge base</p>
+                    </div>
+                    <div class="practice-item">
+                        <div class="practice-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="practice-title">Know When to Escalate</h3>
+                        <p class="practice-text">Don't hesitate to escalate complex issues to senior technicians</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="gsc-logo.png" alt="GSC Logo" class="footer-logo">
+                    <p class="footer-text">Global Sales Consultancy Tech Support</p>
+                    <p class="footer-text-small">Directed by Celokuhle Shabangu</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <nav class="footer-nav">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="logging.html" class="footer-link">Support Logging</a>
+                        <a href="troubleshooting.html" class="footer-link">Troubleshooting</a>
+                        <a href="escalation.html" class="footer-link">Escalation Policy</a>
+                        <a href="asset-register.html" class="footer-link">Asset Register</a>
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="live-chat.html" class="footer-link">Live Chat</a>
+                        <a href="tickets.html" class="footer-link">Tickets</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Support</h4>
+                    <a href="mailto:ithelp@techsupport.com" class="footer-email">
+                        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        ithelp@techsupport.com
+                    </a>
+                    <p class="footer-text-small">Available 24/7 for support requests</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Global Sales Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
