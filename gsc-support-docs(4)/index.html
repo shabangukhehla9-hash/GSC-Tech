@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSC Tech Support Documentation Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Enhanced animated background with more particles and effects -->
+    <canvas id="animated-bg"></canvas>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="gsc-logo.png" alt="GSC Tech Support Logo" class="logo">
+                    <div class="logo-text">
+                        <h1 class="logo-title">GSC Tech Support</h1>
+                        <p class="logo-subtitle">Global Sales Consultancy</p>
+                    </div>
+                </div>
+                <nav class="header-nav">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="logging.html" class="nav-link">Logging</a>
+                    <a href="troubleshooting.html" class="nav-link">Troubleshooting</a>
+                    <a href="escalation.html" class="nav-link">Escalation</a>
+                    <a href="asset-register.html" class="nav-link">Assets</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="live-chat.html" class="nav-link">Live Chat</a>
+                    <!-- Added Tickets link to navigation -->
+                    <a href="tickets.html" class="nav-link">Tickets</a>
+                </nav>
+                <a href="mailto:ithelp@techsupport.com" class="email-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    ithelp@techsupport.com
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Completely redesigned hero section with IT company focus -->
+    <section class="hero-enhanced">
+        <div class="container">
+            <div class="hero-content-enhanced">
+                <div class="hero-badge">
+                    <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    24/7 Enterprise IT Support
+                </div>
+                <h1 class="hero-title-enhanced">
+                    Professional IT Solutions for
+                    <span class="gradient-text">Global Enterprises</span>
+                </h1>
+                <p class="hero-description-enhanced">
+                    Comprehensive technical support infrastructure powered by cutting-edge technology and expert personnel. 
+                    Streamlined incident management, rapid troubleshooting, and enterprise-grade escalation protocols.
+                </p>
+                
+                <!-- Added IT Director information -->
+                <div class="director-info">
+                    <div class="director-avatar">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="director-details">
+                        <p class="director-name">Celokuhle Shabangu</p>
+                        <p class="director-title">IT Director & Chief Technology Officer</p>
+                    </div>
+                </div>
+
+                <!-- Added IT stats showcase -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <div class="stat-number">44+</div>
+                        <div class="stat-label">Managed Systems</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support Coverage</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Uptime SLA</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Departments Served</div>
+                    </div>
+                </div>
+
+                <!-- Added technology stack showcase -->
+                <div class="tech-stack">
+                    <p class="tech-label">Enterprise Technology Stack</p>
+                    <div class="tech-badges">
+                        <span class="tech-badge">Windows Server</span>
+                        <span class="tech-badge">Active Directory</span>
+                        <span class="tech-badge">Cloud Infrastructure</span>
+                        <span class="tech-badge">Network Security</span>
+                        <span class="tech-badge">Database Management</span>
+                        <span class="tech-badge">Virtualization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Added IT services showcase section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Enterprise IT Services</h2>
+                <p class="section-description">Comprehensive technology solutions designed for modern business operations</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Network Security</h3>
+                    <p class="service-description">Advanced firewall management, intrusion detection, and enterprise-grade security protocols</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Infrastructure Management</h3>
+                    <p class="service-description">Server administration, virtualization, and cloud infrastructure optimization</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Asset Lifecycle</h3>
+                    <p class="service-description">Complete hardware tracking, maintenance scheduling, and replacement planning</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Help Desk Support</h3>
+                    <p class="service-description">Multi-tier support system with rapid response times and expert troubleshooting</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Grid -->
+    <section class="documentation-grid">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Support Documentation Portal</h2>
+                <p class="section-description">Access comprehensive guides, forms, and procedures for efficient IT support operations</p>
+            </div>
+            <div class="grid">
+                <a href="logging.html" class="card">
+                    <div class="card-icon">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"></path>
+                            <rect x="9" y="3" width="6" height="4" rx="1"></rect>
+                            <path d="M9 12h6"></path>
+                            <path d="M9 16h6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Support Request Logging</h3>
+                    <p class="card-description">Complete forms and procedures for logging tech support calls and incidents</p>
+                    <span class="card-link">View documentation →</span>
+                </a>
+
+                <a href="troubleshooting.html" class="card">
+                    <div class="card-icon">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Troubleshooting Guide</h3>
+                    <p class="card-description">Sequential questions and methodology for systematic problem identification</p>
+                    <span class="card-link">View documentation →</span>
+                </a>
+
+                <a href="escalation.html" class="card">
+                    <div class="card-icon">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Escalation Policy</h3>
+                    <p class="card-description">Criteria, flowcharts, and procedures for escalating support requests</p>
+                    <span class="card-link">View documentation →</span>
+                </a>
+
+                <a href="asset-register.html" class="card">
+                    <div class="card-icon">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Asset Register</h3>
+                    <p class="card-description">Computer inventory tracking and replacement schedules across all departments</p>
+                    <span class="card-link">View documentation →</span>
+                </a>
+
+                <a href="about.html" class="card">
+                    <div class="card-icon">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">About Us</h3>
+                    <p class="card-description">Learn about our team, mission, and commitment to exceptional IT support</p>
+                    <span class="card-link">View documentation →</span>
+                </a>
+
+                <a href="live-chat.html" class="card">
+                    <div class="card-icon">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Live Chat Support</h3>
+                    <p class="card-description">Connect with our support team in real-time for immediate assistance</p>
+                    <span class="card-link">Start chatting →</span>
+                </a>
+
+                <!-- Added Tickets card to documentation grid -->
+                <a href="tickets.html" class="card">
+                    <div class="card-icon">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Ticket Management</h3>
+                    <p class="card-description">View pending tickets and follow service workflows to resolve customer issues</p>
+                    <span class="card-link">Manage tickets →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="gsc-logo.png" alt="GSC Logo" class="footer-logo">
+                    <p class="footer-text">Global Sales Consultancy Tech Support</p>
+                    <p class="footer-text-small">Directed by Celokuhle Shabangu</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <nav class="footer-nav">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="logging.html" class="footer-link">Support Logging</a>
+                        <a href="troubleshooting.html" class="footer-link">Troubleshooting</a>
+                        <a href="escalation.html" class="footer-link">Escalation Policy</a>
+                        <a href="asset-register.html" class="footer-link">Asset Register</a>
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="live-chat.html" class="footer-link">Live Chat</a>
+                        <!-- Added Tickets link to footer navigation -->
+                        <a href="tickets.html" class="footer-link">Tickets</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Support</h4>
+                    <a href="mailto:ithelp@techsupport.com" class="footer-email">
+                        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        ithelp@techsupport.com
+                    </a>
+                    <p class="footer-text-small">Available 24/7 for support requests</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Global Sales Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enhanced animation script with more dynamic effects -->
+    <script>
+        const canvas = document.getElementById('animated-bg');
+        const ctx = canvas.getContext('2d');
+        
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+        
+        const particles = [];
+        const particleCount = 100;
+        const connectionDistance = 150;
+        
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 0.8;
+                this.vy = (Math.random() - 0.5) * 0.8;
+                this.radius = Math.random() * 2.5 + 1;
+                this.opacity = Math.random() * 0.5 + 0.3;
+            }
+            
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+            }
+            
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(0, 217, 255, ${this.opacity})`;
+                ctx.fill();
+                
+                // Add glow effect
+                ctx.shadowBlur = 10;
+                ctx.shadowColor = 'rgba(0, 217, 255, 0.5)';
+            }
+        }
+        
+        for (let i = 0; i < particleCount; i++) {
+            particles.push(new Particle());
+        }
+        
+        function connectParticles() {
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < connectionDistance) {
+                        const opacity = (1 - distance / connectionDistance) * 0.4;
+                        ctx.beginPath();
+                        ctx.strokeStyle = `rgba(0, 217, 255, ${opacity})`;
+                        ctx.lineWidth = 1.5;
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+        
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.shadowBlur = 0;
+            
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            
+            connectParticles();
+            requestAnimationFrame(animate);
+        }
+        
+        animate();
+    </script>
+</body>
+</html>

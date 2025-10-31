@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Request Logging - GSC Tech Support</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="gsc-logo.png" alt="GSC Tech Support Logo" class="logo">
+                    <div class="logo-text">
+                        <h1 class="logo-title">GSC Tech Support</h1>
+                        <p class="logo-subtitle">Global Sales Consultancy</p>
+                    </div>
+                </div>
+                <a href="mailto:ithelp@techsupport.com" class="email-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    ithelp@techsupport.com
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container-narrow">
+            <a href="index.html" class="back-link">
+                <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Documentation
+            </a>
+
+            <div class="page-header">
+                <h1 class="page-title">Support Request Logging Form</h1>
+                <p class="page-description">Tech Support - Global Sales Consultancy (GSC) Support Request Log</p>
+            </div>
+
+            <!-- Section 1: Initial Call Logging -->
+            <div class="form-card">
+                <div class="form-card-header">
+                    <h2 class="form-card-title">Section 1: Initial Call Logging</h2>
+                    <p class="form-card-description">Complete all fields when receiving a support request</p>
+                </div>
+                <div class="form-card-content">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="callRef" class="form-label">Call Reference ID</label>
+                                <input type="text" id="callRef" class="form-input" placeholder="Auto-generated: YYYYMMDD-###" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="datetime" class="form-label">Date and Time of Call</label>
+                                <input type="datetime-local" id="datetime" class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name and Surname</label>
+                                <input type="text" id="name" class="form-input" placeholder="Enter caller's full name">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Caller Department</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="marketing" class="checkbox">
+                                        <span>Marketing</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="sales" class="checkbox">
+                                        <span>Sales</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="hr" class="checkbox">
+                                        <span>HR</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="other-dept" class="checkbox">
+                                        <span>Other</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Incident Title/Category</label>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="checkbox">
+                                    <span>Hardware</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="checkbox">
+                                    <span>Software</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="checkbox">
+                                    <span>Network</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="checkbox">
+                                    <span>Printer</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="checkbox">
+                                    <span>Email</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="checkbox">
+                                    <span>Password</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="checkbox">
+                                    <span>Other</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description" class="form-label">Incident Description</label>
+                            <textarea id="description" class="form-textarea" rows="5" placeholder="Provide detailed description of the issue..."></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Urgency</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="urgency" value="very-urgent" class="radio">
+                                        <span>Very Urgent</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="urgency" value="average" class="radio" checked>
+                                        <span>Average</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="urgency" value="not-urgent" class="radio">
+                                        <span>Not Urgent</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Priority</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="priority" value="high" class="radio">
+                                        <span>High</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="priority" value="average" class="radio" checked>
+                                        <span>Average</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="priority" value="low" class="radio">
+                                        <span>Low</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="agent-initials" class="form-label">Agent Initials</label>
+                                <input type="text" id="agent-initials" class="form-input" placeholder="Enter your initials">
+                            </div>
+                            <div class="form-group">
+                                <label for="logged-at" class="form-label">Logged At</label>
+                                <input type="time" id="logged-at" class="form-input">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Section 2: Resolution Details -->
+            <div class="form-card">
+                <div class="form-card-header">
+                    <h2 class="form-card-title">Section 2: Resolution Details</h2>
+                    <p class="form-card-description">Complete upon closure of the support request</p>
+                </div>
+                <div class="form-card-content">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Status</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="status" value="resolved" class="radio">
+                                    <span>Resolved</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="status" value="cancelled" class="radio">
+                                    <span>Cancelled</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="status" value="escalated" class="radio">
+                                    <span>Escalated</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="escalated-to" class="form-label">Escalated To (if applicable)</label>
+                            <input type="text" id="escalated-to" class="form-input" placeholder="Name, Department/Level, Date">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cause" class="form-label">Cause of Incident (if known)</label>
+                            <textarea id="cause" class="form-textarea" rows="3" placeholder="Describe the root cause..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="solution" class="form-label">Incident Solution</label>
+                            <textarea id="solution" class="form-textarea" rows="4" placeholder="Describe the solution applied..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Cancellation Reason (if applicable)</label>
+                            <div class="checkbox-group-vertical">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="checkbox">
+                                    <span>Caller resolved independently</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="checkbox">
+                                    <span>Duplicate call</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="checkbox">
+                                    <span>Other</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-row-three">
+                            <div class="form-group">
+                                <label for="time-resolved" class="form-label">Time Resolved</label>
+                                <input type="time" id="time-resolved" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="duration" class="form-label">Total Duration (Minutes)</label>
+                                <input type="number" id="duration" class="form-input" placeholder="0">
+                            </div>
+                            <div class="form-group">
+                                <label for="agent-name" class="form-label">Agent Name</label>
+                                <input type="text" id="agent-name" class="form-input" placeholder="Full name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="supervisor" class="form-label">Supervisor Approval</label>
+                            <input type="text" id="supervisor" class="form-input" placeholder="Supervisor signature/initials">
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="submit" class="btn-primary">Submit Log</button>
+                            <button type="button" class="btn-secondary">Save as Draft</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="gsc-logo.png" alt="GSC Logo" class="footer-logo">
+                    <p class="footer-text">Global Sales Consultancy Tech Support</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <nav class="footer-nav">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="logging.html" class="footer-link">Support Logging</a>
+                        <a href="troubleshooting.html" class="footer-link">Troubleshooting</a>
+                        <a href="escalation.html" class="footer-link">Escalation Policy</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Support</h4>
+                    <a href="mailto:ithelp@techsupport.com" class="footer-email">
+                        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        ithelp@techsupport.com
+                    </a>
+                    <p class="footer-text-small">Available 24/7 for support requests</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Global Sales Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

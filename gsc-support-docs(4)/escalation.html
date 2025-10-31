@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalation Policy - GSC Tech Support</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="gsc-logo.png" alt="GSC Tech Support Logo" class="logo">
+                    <div class="logo-text">
+                        <h1 class="logo-title">GSC Tech Support</h1>
+                        <p class="logo-subtitle">Global Sales Consultancy</p>
+                    </div>
+                </div>
+                <a href="mailto:ithelp@techsupport.com" class="email-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    ithelp@techsupport.com
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container-wide">
+            <a href="index.html" class="back-link">
+                <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Documentation
+            </a>
+
+            <div class="page-header">
+                <h1 class="page-title">Call Escalation Policy & Flowchart</h1>
+                <p class="page-description">Criteria and procedures for escalating tech support requests through support levels</p>
+                <span class="badge">Version 1.0 | Date: 30/10/2025</span>
+            </div>
+
+            <!-- Level 1 -->
+            <div class="level-card">
+                <div class="level-header">
+                    <span class="level-badge">Level 1</span>
+                    <h2 class="level-title">Front-Line Support (Service Desk Agent)</h2>
+                </div>
+                <p class="level-handle"><strong>Handle:</strong> Basic issues resolvable on-site in &lt;30 mins</p>
+                <div class="level-content">
+                    <div class="level-section">
+                        <h4 class="section-title">Examples:</h4>
+                        <ul class="example-list">
+                            <li>Password resets</li>
+                            <li>App restarts</li>
+                            <li>Cable reconnects</li>
+                            <li>Simple printing/email setup</li>
+                        </ul>
+                    </div>
+                    <div class="escalate-section">
+                        <h4 class="escalate-title">
+                            <svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="12"></line>
+                                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                            </svg>
+                            Escalate to Level 2 if:
+                        </h4>
+                        <ul class="escalate-list">
+                            <li><span class="arrow">→</span> Cannot reproduce/resolve after full troubleshooting (e.g., Persistent crashes)</li>
+                            <li><span class="arrow">→</span> Requires admin rights or specialized tools (e.g., Software installs)</li>
+                            <li><span class="arrow">→</span> Hardware fault suspected (e.g., No power, faulty peripherals)</li>
+                            <li><span class="arrow">→</span> &gt;30 mins elapsed on time-sensitive (Very Urgent) issues</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Level 2 -->
+            <div class="level-card">
+                <div class="level-header">
+                    <span class="level-badge">Level 2</span>
+                    <h2 class="level-title">Second-Level Support (Senior Tech)</h2>
+                </div>
+                <p class="level-handle"><strong>Handle:</strong> Intermediate issues, 30-90 mins</p>
+                <div class="level-content">
+                    <div class="level-section">
+                        <h4 class="section-title">Examples:</h4>
+                        <ul class="example-list">
+                            <li>OS updates</li>
+                            <li>Driver installs</li>
+                            <li>Network config</li>
+                            <li>Basic repairs</li>
+                        </ul>
+                    </div>
+                    <div class="escalate-section">
+                        <h4 class="escalate-title">
+                            <svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="12"></line>
+                                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                            </svg>
+                            Escalate to Level 3 if:
+                        </h4>
+                        <ul class="escalate-list">
+                            <li><span class="arrow">→</span> Vendor-specific issue (e.g., Printer firmware)</li>
+                            <li><span class="arrow">→</span> Requires deep expertise (e.g., Custom GSC software bugs)</li>
+                            <li><span class="arrow">→</span> Affects multiple users (e.g., Department-wide outage)</li>
+                            <li><span class="arrow">→</span> &gt;90 mins or High Priority unresolved</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Level 3 -->
+            <div class="level-card">
+                <div class="level-header">
+                    <span class="level-badge">Level 3</span>
+                    <h2 class="level-title">Third-Level Support (Lead Engineer/External)</h2>
+                </div>
+                <p class="level-handle"><strong>Handle:</strong> Complex/systemic issues</p>
+                <div class="level-content">
+                    <div class="level-section">
+                        <h4 class="section-title">Examples:</h4>
+                        <ul class="example-list">
+                            <li>Server problems</li>
+                            <li>Major outages</li>
+                            <li>Warranty claims</li>
+                        </ul>
+                    </div>
+                    <div class="escalate-section">
+                        <h4 class="escalate-title">
+                            <svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="12"></line>
+                                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                            </svg>
+                            Escalate to Vendor/External if:
+                        </h4>
+                        <ul class="escalate-list">
+                            <li><span class="arrow">→</span> Hardware under warranty</li>
+                            <li><span class="arrow">→</span> Beyond internal scope</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Escalation Rules Table -->
+            <div class="table-card accent-border">
+                <h3 class="table-card-title">General Escalation Rules</h3>
+                <p class="table-card-description">Time-based escalation requirements by priority</p>
+                <div class="table-wrapper">
+                    <table class="escalation-table">
+                        <thead>
+                            <tr>
+                                <th>Priority/Urgency</th>
+                                <th>Escalation Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>High/Very Urgent</td>
+                                <td class="time-cell">Immediate (&lt;15 mins)</td>
+                            </tr>
+                            <tr>
+                                <td>Average</td>
+                                <td class="time-cell">Within 1 hour</td>
+                            </tr>
+                            <tr>
+                                <td>Low/Not Urgent</td>
+                                <td class="time-cell">End of shift</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">
+                    <strong>Logging:</strong> Always update status to "Escalated" with details in the support request form.
+                </p>
+            </div>
+
+            <!-- Flowchart -->
+            <div class="flowchart-card">
+                <h3 class="flowchart-title">Escalation Flowchart</h3>
+                <p class="flowchart-description">Visual representation of the escalation process</p>
+                <div class="flowchart">
+                    <!-- Start -->
+                    <div class="flow-step">
+                        <div class="flow-number">1</div>
+                        <div class="flow-box start-box">
+                            <p class="flow-text"><strong>START: New Call Logged</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="flow-line">
+                        <!-- Level 1 -->
+                        <div class="flow-step">
+                            <div class="flow-number">2</div>
+                            <div class="flow-box">
+                                <p class="flow-text"><strong>Level 1: Front-Line Agent</strong></p>
+                                <p class="flow-subtext">Troubleshoot per guidelines</p>
+                            </div>
+                        </div>
+
+                        <!-- Decision 1 -->
+                        <div class="flow-step">
+                            <div class="flow-number decision">?</div>
+                            <div class="flow-box decision-box">
+                                <p class="flow-text"><strong>Can Resolve?</strong></p>
+                                <div class="decision-badges">
+                                    <span class="decision-badge success">YES → Close: Resolved</span>
+                                    <span class="decision-badge error">NO → Escalate to Level 2</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Level 2 -->
+                        <div class="flow-step">
+                            <div class="flow-number">3</div>
+                            <div class="flow-box">
+                                <p class="flow-text"><strong>Level 2: Senior Tech</strong></p>
+                                <p class="flow-subtext">Advanced troubleshooting</p>
+                            </div>
+                        </div>
+
+                        <!-- Decision 2 -->
+                        <div class="flow-step">
+                            <div class="flow-number decision">?</div>
+                            <div class="flow-box decision-box">
+                                <p class="flow-text"><strong>Can Resolve?</strong></p>
+                                <div class="decision-badges">
+                                    <span class="decision-badge success">YES → Close: Resolved</span>
+                                    <span class="decision-badge error">NO → Escalate to Level 3</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Level 3 -->
+                        <div class="flow-step">
+                            <div class="flow-number">4</div>
+                            <div class="flow-box">
+                                <p class="flow-text"><strong>Level 3: Lead Engineer</strong></p>
+                                <p class="flow-subtext">Deep dive/systemic fix or external vendor</p>
+                            </div>
+                        </div>
+
+                        <!-- End -->
+                        <div class="flow-step">
+                            <div class="flow-number end">✓</div>
+                            <div class="flow-box end-box">
+                                <p class="flow-text"><strong>END: Archive Log</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="gsc-logo.png" alt="GSC Logo" class="footer-logo">
+                    <p class="footer-text">Global Sales Consultancy Tech Support</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <nav class="footer-nav">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="logging.html" class="footer-link">Support Logging</a>
+                        <a href="troubleshooting.html" class="footer-link">Troubleshooting</a>
+                        <a href="escalation.html" class="footer-link">Escalation Policy</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Support</h4>
+                    <a href="mailto:ithelp@techsupport.com" class="footer-email">
+                        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        ithelp@techsupport.com
+                    </a>
+                    <p class="footer-text-small">Available 24/7 for support requests</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Global Sales Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Chat - GSC Tech Support</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="gsc-logo.png" alt="GSC Tech Support Logo" class="logo">
+                    <div class="logo-text">
+                        <h1 class="logo-title">GSC Tech Support</h1>
+                        <p class="logo-subtitle">Global Sales Consultancy</p>
+                    </div>
+                </div>
+                <!-- Added navigation menu in header -->
+                <nav class="header-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="logging.html" class="nav-link">Logging</a>
+                    <a href="troubleshooting.html" class="nav-link">Troubleshooting</a>
+                    <a href="escalation.html" class="nav-link">Escalation</a>
+                    <a href="asset-register.html" class="nav-link">Assets</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="live-chat.html" class="nav-link active">Live Chat</a>
+                </nav>
+                <a href="mailto:ithelp@techsupport.com" class="email-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    ithelp@techsupport.com
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container-narrow">
+            <a href="index.html" class="back-link">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12,19 5,12 12,5"></polyline>
+                </svg>
+                Back to Home
+            </a>
+
+            <div class="page-header">
+                <h1 class="page-title">Live Chat Support</h1>
+                <p class="page-description">
+                    Connect with our support team in real-time for immediate assistance with your technical issues.
+                </p>
+            </div>
+
+            <!-- Chat Interface -->
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="chat-status">
+                        <span class="status-indicator online"></span>
+                        <div>
+                            <h3 class="chat-title">Support Team</h3>
+                            <p class="chat-subtitle">Online - Average response time: 2 minutes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message-date">Today</div>
+                    
+                    <div class="message support-message">
+                        <div class="message-avatar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="message-content">
+                            <div class="message-header">
+                                <span class="message-sender">Support Agent</span>
+                                <span class="message-time">Just now</span>
+                            </div>
+                            <div class="message-text">
+                                Hello! Welcome to GSC Tech Support. How can I assist you today?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <form class="chat-form" id="chatForm">
+                        <input 
+                            type="text" 
+                            class="chat-input" 
+                            id="messageInput"
+                            placeholder="Type your message here..."
+                            autocomplete="off"
+                        >
+                        <button type="submit" class="chat-send-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                            Send
+                        </button>
+                    </form>
+                    <div class="chat-info">
+                        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                        <span>Messages are monitored 24/7. For urgent issues, please call our hotline.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <h3 class="quick-actions-title">Quick Actions</h3>
+                <div class="quick-actions-grid">
+                    <button class="quick-action-btn" onclick="sendQuickMessage('I need help with my computer')">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        Computer Issue
+                    </button>
+                    <button class="quick-action-btn" onclick="sendQuickMessage('I cannot access my email')">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Email Problem
+                    </button>
+                    <button class="quick-action-btn" onclick="sendQuickMessage('I need software installation help')">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        </svg>
+                        Software Help
+                    </button>
+                    <button class="quick-action-btn" onclick="sendQuickMessage('I have a network connectivity issue')">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                            <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                        </svg>
+                        Network Issue
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="gsc-logo.png" alt="GSC Logo" class="footer-logo">
+                    <p class="footer-text">Global Sales Consultancy Tech Support</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <nav class="footer-nav">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="logging.html" class="footer-link">Support Logging</a>
+                        <a href="troubleshooting.html" class="footer-link">Troubleshooting</a>
+                        <a href="escalation.html" class="footer-link">Escalation Policy</a>
+                        <a href="asset-register.html" class="footer-link">Asset Register</a>
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="live-chat.html" class="footer-link">Live Chat</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Support</h4>
+                    <a href="mailto:ithelp@techsupport.com" class="footer-email">
+                        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        ithelp@techsupport.com
+                    </a>
+                    <p class="footer-text-small">Available 24/7 for support requests</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Global Sales Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const chatMessages = document.getElementById('chatMessages');
+        const chatForm = document.getElementById('chatForm');
+        const messageInput = document.getElementById('messageInput');
+
+        function formatTime() {
+            const now = new Date();
+            return now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+        }
+
+        function addMessage(text, isUser = true) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user-message' : 'support-message'}`;
+            
+            messageDiv.innerHTML = `
+                <div class="message-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <div class="message-content">
+                    <div class="message-header">
+                        <span class="message-sender">${isUser ? 'You' : 'Support Agent'}</span>
+                        <span class="message-time">${formatTime()}</span>
+                    </div>
+                    <div class="message-text">${text}</div>
+                </div>
+            `;
+            
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function simulateSupportResponse(userMessage) {
+            setTimeout(() => {
+                let response = "Thank you for your message. A support agent will assist you shortly.";
+                
+                if (userMessage.toLowerCase().includes('computer')) {
+                    response = "I understand you're having computer issues. Can you please describe the specific problem you're experiencing?";
+                } else if (userMessage.toLowerCase().includes('email')) {
+                    response = "I see you're having email access issues. Have you tried resetting your password? I can guide you through the process.";
+                } else if (userMessage.toLowerCase().includes('software')) {
+                    response = "I can help with software installation. Which software are you trying to install?";
+                } else if (userMessage.toLowerCase().includes('network')) {
+                    response = "Network connectivity issues can be frustrating. Let's troubleshoot this together. Are you connected via WiFi or ethernet cable?";
+                }
+                
+                addMessage(response, false);
+            }, 1500);
+        }
+
+        chatForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const message = messageInput.value.trim();
+            
+            if (message) {
+                addMessage(message, true);
+                messageInput.value = '';
+                simulateSupportResponse(message);
+            }
+        });
+
+        function sendQuickMessage(message) {
+            addMessage(message, true);
+            simulateSupportResponse(message);
+        }
+    </script>
+</body>
+</html>

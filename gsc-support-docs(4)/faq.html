@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently Asked Questions - GSC Tech Support answers common IT support questions">
+    <meta name="keywords" content="IT support, FAQ, tech help, troubleshooting, GSC">
+    <title>FAQ - GSC Tech Support</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="animated-bg"></canvas>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="gsc-logo.png" alt="GSC Tech Support Logo" class="logo">
+                    <div class="logo-text">
+                        <h1 class="logo-title">GSC Tech Support</h1>
+                        <p class="logo-subtitle">Global Sales Consultancy</p>
+                    </div>
+                </div>
+                <nav class="header-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="tickets.html" class="nav-link">Tickets</a>
+                    <a href="live-chat.html" class="nav-link">Live Chat</a>
+                    <a href="knowledge-base.html" class="nav-link">Knowledge Base</a>
+                    <a href="faq.html" class="nav-link active">FAQ</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <a href="mailto:ithelp@techsupport.com" class="email-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    ithelp@techsupport.com
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Frequently Asked Questions</h1>
+                <p class="page-description">Quick answers to common IT support questions</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-category">
+                    <h2 class="faq-category-title">General Support</h2>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do I submit a support request?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You can submit a support request through our <a href="logging.html">Support Request Logging Form</a>, via email at <a href="mailto:ithelp@techsupport.com">ithelp@techsupport.com</a>, or through our <a href="live-chat.html">Live Chat</a> system. Make sure to include your name, department, computer name, and a detailed description of the issue.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What are your support hours?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>GSC Tech Support operates 24/7/365. Our team is always available to assist with critical issues. Response times vary based on priority level as outlined in our <a href="sla.html">Service Level Agreement</a>.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How long will it take to resolve my issue?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Resolution times depend on the complexity and priority of your issue. Critical issues receive immediate attention with a 1-hour response time. Standard issues typically receive a response within 4 hours. Check our <a href="sla.html">SLA page</a> for detailed response and resolution times.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can I track the status of my support ticket?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! You can view all pending and resolved tickets on our <a href="tickets.html">Ticket Management</a> page. Each ticket has a unique ID and shows its current status (New, In Progress, Resolved, or Closed).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h2 class="faq-category-title">Hardware & Equipment</h2>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do I request a computer replacement?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Computers older than 3 years or showing declining performance are eligible for replacement. Submit a request through our support form, and our team will evaluate based on the <a href="asset-register.html">Asset Register</a> data. Replacements are prioritized based on age, incident frequency, and business impact.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What should I do if my computer won't turn on?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>First, check that the power cable is securely connected and the power outlet is working. Try a different outlet if available. If the issue persists, submit an urgent support request immediately. Refer to our <a href="troubleshooting.html">Troubleshooting Guide</a> for systematic diagnostic steps.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can I request additional RAM or storage?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, hardware upgrade requests can be submitted through the support form. Include justification for the upgrade (specific software requirements, performance issues, etc.). Upgrades are evaluated based on business need and budget availability.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h2 class="faq-category-title">Software & Applications</h2>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do I install new software?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Software installation requests must go through IT for security and licensing compliance. Submit a request specifying the software name, version, and business justification. Our team will evaluate, approve, and install approved software on your system.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What should I do if an application crashes frequently?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Document when the crashes occur (specific actions, time of day, error messages). Submit a support ticket with this information. Our team will investigate potential causes including software conflicts, insufficient resources, or corrupted installations.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How often are software updates applied?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Critical security updates are applied immediately. Regular updates are scheduled during maintenance windows (typically after business hours). You'll receive notifications before major updates that may require system restarts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h2 class="faq-category-title">Network & Connectivity</h2>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What should I do if I can't connect to the network?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Check that your network cable is securely connected (for wired connections) or that WiFi is enabled (for wireless). Restart your computer. If the issue persists, contact support immediately as network connectivity is considered a high-priority issue.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Why is my internet connection slow?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Slow connections can result from network congestion, background updates, or local computer issues. Close unnecessary applications and browser tabs. If the problem persists across multiple users, it may be a network-wide issue that requires immediate attention.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do I access company resources remotely?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Remote access requires VPN credentials and proper authorization. Contact IT support to set up remote access. You'll receive secure login credentials and instructions for connecting to company resources from external locations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h2 class="faq-category-title">Security & Passwords</h2>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do I reset my password?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Password resets can be requested through the support form or by contacting IT directly. For security purposes, you'll need to verify your identity. Passwords must meet complexity requirements (minimum 8 characters, including uppercase, lowercase, numbers, and special characters).</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What should I do if I receive a suspicious email?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Do NOT click any links or download attachments from suspicious emails. Forward the email to IT security immediately and delete it from your inbox. Never provide passwords or sensitive information via email, even if the request appears to come from IT.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How often should I change my password?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Company policy requires password changes every 90 days. You'll receive reminders before your password expires. Use unique passwords for different systems and never share your credentials with anyone, including IT staff.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2>Still have questions?</h2>
+                <p>Can't find the answer you're looking for? Our support team is here to help.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary">Contact Support</a>
+                    <a href="live-chat.html" class="btn-secondary">Start Live Chat</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="gsc-logo.png" alt="GSC Logo" class="footer-logo">
+                    <p class="footer-text">Global Sales Consultancy Tech Support</p>
+                    <p class="footer-text-small">Directed by Celokuhle Shabangu</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Documentation</h4>
+                    <nav class="footer-nav">
+                        <a href="logging.html" class="footer-link">Support Logging</a>
+                        <a href="troubleshooting.html" class="footer-link">Troubleshooting</a>
+                        <a href="escalation.html" class="footer-link">Escalation Policy</a>
+                        <a href="asset-register.html" class="footer-link">Asset Register</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <nav class="footer-nav">
+                        <a href="tickets.html" class="footer-link">Tickets</a>
+                        <a href="live-chat.html" class="footer-link">Live Chat</a>
+                        <a href="knowledge-base.html" class="footer-link">Knowledge Base</a>
+                        <a href="faq.html" class="footer-link">FAQ</a>
+                        <a href="sla.html" class="footer-link">SLA</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <a href="mailto:ithelp@techsupport.com" class="footer-email">
+                        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        ithelp@techsupport.com
+                    </a>
+                    <a href="contact.html" class="footer-link">Contact Page</a>
+                    <a href="about.html" class="footer-link">About Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Global Sales Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/animation.js"></script>
+    <script>
+        // FAQ accordion functionality
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Toggle current item
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
